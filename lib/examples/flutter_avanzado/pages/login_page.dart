@@ -41,6 +41,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _portraitView(Responsive responsive) {
     return SingleChildScrollView(
+      physics: const NeverScrollableScrollPhysics(),
       child: SizedBox(
         height: responsive.height,
         child: const Column(
@@ -62,6 +63,7 @@ class _LoginPageState extends State<LoginPage> {
       children: [
         Expanded(
           child: SingleChildScrollView(
+            physics: const NeverScrollableScrollPhysics(),
             child: SizedBox(
               height: responsive.height,
               child: const Column(
